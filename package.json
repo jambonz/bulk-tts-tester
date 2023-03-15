@@ -1,0 +1,38 @@
+{
+  "name": "@jambonz/bulk-tts-tester",
+  "version": "0.0.1",
+  "description": "TTS-related speech Capacity Test",
+  "main": "index.js",
+  "author": "Dave Horton",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "NODE_ENV=test JAMBONES_REDIS_USERNAME=daveh JAMBONES_REDIS_PASSWORD=foobarbazzle node test/ ",
+    "coverage": "nyc --reporter html --report-dir ./coverage npm run test",
+    "jslint": "eslint index.js lib",
+    "build": "./build_stubs.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jambonz/bulk-tts-tester.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jambonz/bulk-tts-tester/issues"
+  },
+  "homepage": "https://github.com/jambonz/bulk-tts-tester#readme",
+  "dependencies": {
+    "@jambonz/speech-utils": "^0.0.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.33.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "config": "^3.3.9",
+    "tape": "^5.1.1",
+    "pino": "^7.2.0",
+    "ffprobe": "^1.1.2",
+    "ffprobe-static": "^3.1.0"
+  }
+}

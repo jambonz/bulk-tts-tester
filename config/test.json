@@ -9,5 +9,13 @@
   "redis-auth": {
     "host": "127.0.0.1",
     "port": 3380
+  },
+  "tts" : {
+    "vendor": "microsoft",
+    "api_key": "xxxx",
+    "region": "eastus",
+    "language": "en-US",
+    "voice": "en-US-AriaNeural",
+    "loop": 100
   }
 }

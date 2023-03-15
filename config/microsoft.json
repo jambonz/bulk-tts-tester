@@ -1,21 +1,16 @@
+
 {
-  "logging": {
-    "level": "error"
-  },
   "redis": {
     "host": "127.0.0.1",
-    "port": 3379
-  },
-  "redis-auth": {
-    "host": "127.0.0.1",
-    "port": 3380
+    "port": 6379
   },
   "tts" : {
     "vendor": "microsoft",
-    "api_key": "xxxx",
+    "api_key": "xxx",
     "region": "eastus",
     "language": "en-US",
     "voice": "en-US-AriaNeural",
+    "sampleText": "<speak>If this is a medical emergency, please hang up and dial 9 1 1.</speak>",
     "loop": 100
   }
 }

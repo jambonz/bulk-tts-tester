@@ -10,18 +10,12 @@ function deleteFilesWithPrefix(directoryPath, prefix) {
       console.error('Error while reading directory:', err);
       return;
     }
-    files.forEach(file => {
+    for (const file in files) {
       if (file.startsWith(prefix)) {
         const filePath = path.join(directoryPath, file);
-        fs.unlink(filePath, err => {
-          if (err) {
-            console.error(`Error while deleting file ${filePath}:`, err);
-          } else {
-            console.log(`Deleted file ${filePath}`);
-          }
-        });
+        fs.unlinkSync(filePath);
       }
-    });
+    }
   });
 }
 

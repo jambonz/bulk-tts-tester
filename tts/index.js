@@ -16,7 +16,7 @@ const {purgeTtsCache, synthAudio} = fn(opts, logger);
 
 (async () => {
   // Clean env
-  await purgeTtsCache();
+  //await purgeTtsCache();
   deleteFilesWithPrefix('/tmp', 'tts-');
 
   const sampleText = 'If this is a medical emergency, please hang up and dial 9 1';
